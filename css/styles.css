@@ -478,7 +478,12 @@ img {
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
-  padding: 8px 16px;
+  padding-left: 16px;
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 input::placeholder {
@@ -490,31 +495,41 @@ input::placeholder {
 .btn-send {
   padding: 8px 24px;
   min-width: 165px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
 
   fill: #fff;
 
   display: flex;
   gap: 16px;
+  justify-content: center;
+  align-items: center;
 
-  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+
+  background-color: #4D5AE5;
+
 }
 
-.footer-feedback {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.footer-feedback-wrap {
-  display: flex;
-  gap: 24;
-  width: 453px;
+.icon-btn-footer{
+  margin-left: 16px;
 }
 
 .form-feedback {
+  display: flex;
+  gap: 24px;
   margin: 0 auto;
   padding: 0;
 }
+
+
 
 .backdrop {
   position: fixed;
