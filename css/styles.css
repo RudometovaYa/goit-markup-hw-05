@@ -382,8 +382,8 @@ img {
 }
 
 .overlay {
-position: relative;
-overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .overlay-text {
@@ -403,7 +403,7 @@ overflow: hidden;
 
 .portfolio-item:hover .overlay-text {
   transform: translateY(0);
-} 
+}
 
 .portfolio-item {
   cursor: pointer;
@@ -414,8 +414,7 @@ overflow: hidden;
 .portfolio-item:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  }
-
+}
 
 /* Footer part */
 
@@ -480,7 +479,6 @@ overflow: hidden;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
   padding: 8px 16px;
-
 }
 
 input::placeholder {
@@ -490,7 +488,6 @@ input::placeholder {
 }
 
 .btn-send {
-
   padding: 8px 24px;
   min-width: 165px;
 
@@ -508,19 +505,16 @@ input::placeholder {
   justify-content: flex-start;
 }
 
-.footer-feedback-wrap{
+.footer-feedback-wrap {
   display: flex;
   gap: 24;
   width: 453px;
-
 }
 
 .form-feedback {
   margin: 0 auto;
   padding: 0;
 }
-
-
 
 .backdrop {
   position: fixed;
@@ -536,7 +530,8 @@ input::placeholder {
   visibility: hidden;
   pointer-events: none;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -557,7 +552,8 @@ input::placeholder {
 
   transform: translate(-50%, -50%);
 
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -571,121 +567,122 @@ input::placeholder {
   position: absolute;
   top: 24px;
   right: 24px;
-  
+
   width: 24px;
   height: 24px;
   border-radius: 50%;
 
-  background-color: #E7E9FC;
+  background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-
-  }
-
-  .modal-close-icon {
-    fill: #2e2f42;
-  }
- 
-  .modal-close:hover, .modal-close:focus {
-    background-color: #404bbf;
-    border: none;
-  }
-
-  .modal-close:hover .modal-close-icon,
-  .modal-close:focus .modal-close-icon {
-    fill: #ffffff;
-  }
-
-  .modal-title {
-    font: 500 16px / 1.5 "Roboto", sans-serif;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
-    margin-bottom: 16px;
-  }
-
-  .modal-label {
-    font: 400 12px / 1.16667 "Roboto", sans-serif;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-  }
-  
-  .input-wrap {
-    position: relative;
-  }
-
-  .modal-input-wrap {
-    margin-bottom: 8px;
-  }
-
-  .modal-inpyt {
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    width: 100%;
-    min-height: 40px;
-    background-color: transparent;
-    padding-left: 38px;
-  }
-
-  .modal-input-icon{
-   position: absolute;
-   fill: #2e2f42;
-   left: 16px;
-   top: 50%;
-   transform: translateY(-50%);
-  }
-
-  .modal-inpyt:hover, .modal-inpyt:focus {
-    border-color: #4d5ae5;  
-  }
-  
-  .modal-inpyt:hover+.modal-input-icon {
-    fill: #4d5ae5;
-    }
-
-  .modal-textarea {
-    resize: none;
-    min-height: 120px;
-    padding: 8px 16px;
-    }
-   
-  textarea::placeholder {
-    font: 400 12px / 1.16667 "Roboto", sans-serif;
-    letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);
-  }
-
-  .modal-textarea-wrap {
-    margin-bottom: 16px;
-  }
-
-  .label-checkbox {
-    font: 400 12px / 1.16667 "Roboto", sans-serif;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-  }
-
-  .chackbox-link {
-    text-decoration: underline;
-    font: 400 12px / 1.33333 "Roboto", sans-serif;
-    text-decoration-skip-ink: none;
-    color: #4d5ae5;
 }
 
-  .custom-checkbox {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 16px;
-    height: 16px;
-    border-radius: 2px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    fill: transparent;
+.modal-close-icon {
+  fill: #2e2f42;
 }
 
-  .checkbox-input:checked + .label-checkbox > .custom-checkbox {
-    fill: #ffffff;
-    background-color: #404bbf;
-    border: none;
+.modal-close:hover,
+.modal-close:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.modal-close:hover .modal-close-icon,
+.modal-close:focus .modal-close-icon {
+  fill: #ffffff;
+}
+
+.modal-title {
+  font: 500 16px / 1.5 "Roboto", sans-serif;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.modal-label {
+  font: 400 12px / 1.16667 "Roboto", sans-serif;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.modal-input-wrap {
+  margin-bottom: 8px;
+}
+
+.modal-inpyt {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 100%;
+  min-height: 40px;
+  background-color: transparent;
+  padding-left: 38px;
+}
+
+.modal-input-icon {
+  position: absolute;
+  fill: #2e2f42;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-inpyt:hover,
+.modal-inpyt:focus {
+  border-color: #4d5ae5;
+}
+
+.modal-inpyt:hover + .modal-input-icon {
+  fill: #4d5ae5;
+}
+
+.modal-textarea {
+  resize: none;
+  min-height: 120px;
+  padding: 8px 16px;
+}
+
+textarea::placeholder {
+  font: 400 12px / 1.16667 "Roboto", sans-serif;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-textarea-wrap {
+  margin-bottom: 16px;
+}
+
+.label-checkbox {
+  font: 400 12px / 1.16667 "Roboto", sans-serif;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.chackbox-link {
+  text-decoration: underline;
+  font: 400 12px / 1.33333 "Roboto", sans-serif;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+
+.custom-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  fill: transparent;
+}
+
+.checkbox-input:checked + .label-checkbox > .custom-checkbox {
+  fill: #ffffff;
+  background-color: #404bbf;
+  border: none;
 }
 
 .checkbox-wrap {
