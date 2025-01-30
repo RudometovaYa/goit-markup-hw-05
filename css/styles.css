@@ -700,6 +700,7 @@ textarea::placeholder {
   font: 400 12px / 1.16667 "Roboto", sans-serif;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  line-height: 1.17;
 }
 
 .chackbox-link {
@@ -725,7 +726,7 @@ textarea::placeholder {
 }
 
 .checkbox-input:checked + .label-checkbox > .custom-checkbox {
-  fill: #ffffff;
+  fill:#F4F4FD;
   background-color: #404bbf;
   border: none;
 }
