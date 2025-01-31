@@ -667,9 +667,12 @@ input::placeholder {
   border-color: #4d5ae5;
 }
 
-.modal-inpyt:hover + .modal-input-icon {
+/*.modal-inpyt:hover + .modal-input-icon {
   fill: #4d5ae5;
-}
+}*/
+
+.modal-inpyt:focus-within + .modal-input-icon {
+  fill: #4d5ae5;}
 
 .modal-textarea {
   width: 100%;
